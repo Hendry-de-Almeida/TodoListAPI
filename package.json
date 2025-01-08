@@ -1,0 +1,27 @@
+{
+  "name": "ex001",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon --watch src --exec ts-node ./src/index.ts",
+    "build": "npx tsc -init",
+    "migrate": "npx prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "Hendry de Almeida",
+  "license": "ISC",
+  "description": "API de uma lista de tarefas",
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "fastify": "^5.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "nodemon": "^3.1.7",
+    "prisma": "^6.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
